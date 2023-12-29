@@ -10,6 +10,7 @@ const demoUrls = [
   'https://twitter.com/nuxt_js/status/1739340710908756183',
   'https://github.com/daimajia',
   'https://github.com/daimajia/AndroidViewAnimations',
+  'https://play.linwise.com/iframes',
 ];
 
 export default function Page({ searchParams }: { searchParams: { [key: string]: string | string[] | undefined } }) {
@@ -21,9 +22,9 @@ export default function Page({ searchParams }: { searchParams: { [key: string]: 
         <form className="flex gap-4">
           <div className="flex-1">
             <input
-              type="text"
-              name="field_url"
               className="block h-10 w-full rounded-lg border border-gray-300 bg-gray-50 px-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+              type="text"
+              value={url}
               onChange={(e) => setUrl(e.target.value)}
             />
           </div>
