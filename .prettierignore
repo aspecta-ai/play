@@ -1,0 +1,5 @@
+!.*.js
+**/yarn.lock
+**/pnpm-lock.yaml
+./.next/**
+**/node_modules/**
